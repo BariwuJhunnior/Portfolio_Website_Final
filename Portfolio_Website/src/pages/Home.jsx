@@ -7,10 +7,25 @@ import ContactSection from "../components/ContactSection";
 function Home() {
   return (
     <div className="bg-[url('/portfolioBackgroundColors.jpg')] bg-cover bg-center w-screen h-full text-white min-h-screen">
-      <HeroSection />
-      <ProjectsSection />
-      <CertificatesSection />
-      <ContactSection />
+      {/* 1. Hero Section */}
+      <section id="home">
+        <HeroSection />
+      </section>
+
+      {/* 3. Projects Section */}
+      <section id="projects">
+        <ProjectsSection />
+      </section>
+
+      {/* Certificate Section */}
+      <section id="certificates">
+        <CertificatesSection />
+      </section>
+
+      {/* 4. Contact Section */}
+      <section id="contact">
+        <ContactSection />
+      </section>
     </div>
   );
 }
