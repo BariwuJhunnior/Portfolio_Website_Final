@@ -33,8 +33,6 @@ function Certificates() {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20, scale: 0.5 }}
-      whileInView={{ opacity: 1, y: 0, scale: 1 }}
       transition={{
         duration: 0.5,
         type: "spring",
@@ -47,6 +45,15 @@ function Certificates() {
       {certificatesData.map((certificate) => (
         <motion.div
           key={certificate.id}
+          initial={{ opacity: 0, y: 20, scale: 0.5 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{
+            duration: 0.5,
+            type: "spring",
+            stiffness: 100,
+            damping: 20,
+          }}
+          viewport={{ once: false }}
           whileHover={{ y: -5 }}
           className="bg-slate-800/40 border border-slate-700 p-4 rounded-2xl flex flex-col sm:flex-row gap-6 items-center justify-center"
         >
