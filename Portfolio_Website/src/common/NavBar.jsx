@@ -66,10 +66,10 @@ function NavBar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-white hover:cursor-pointer hover:text-gray-400"
+          className={`md:hidden text-white hover:cursor-pointer hover:text-gray-400 ${isOpen && "hidden"}`}
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <X /> : <Menu />}
+          {<Menu />}
         </button>
 
         {/* Mobile Menu */}
