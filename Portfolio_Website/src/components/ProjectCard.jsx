@@ -24,7 +24,7 @@ function ProjectCard({ project }) {
         </div>
 
         {project.is_deployed && (
-          <span className="absolute top-3 right-3 bg-amber-400 text-slate-900 text-[10px] font-bold px-2 mt-1 ml-1 rounded-bl-full py-1  uppercase tracking-wider">
+          <span className="absolute top-3 right-3 bg-blue-400 text-slate-900 text-[10px] font-bold px-2 mt-1 ml-1 rounded-tr-full py-1  uppercase tracking-wider">
             Deployed
           </span>
         )}
