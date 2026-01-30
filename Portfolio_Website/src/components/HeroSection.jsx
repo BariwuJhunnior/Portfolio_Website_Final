@@ -16,7 +16,7 @@ function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="w-40 h-40 rounded-full border-4 border-blue-400 overflow-hidden shadow-2xl shadow-blue-500/20 hover:-translate-y-2 transition-transform duration-500"
+            className="w-40 h-40 rounded-full border-4 border-none overflow-hidden shadow-2xl shadow-blue-500/20 hover:-translate-y-2 transition-transform duration-500"
           >
             <img
               src="/profilePicturePortfolio.jpg"
@@ -34,7 +34,7 @@ function HeroSection() {
           className="text-3xl md:text-5xl font-extrabold mb-4"
         >
           Hi, I'm{" "}
-          <span className="text-blue-300">Bariwu Alhassan Nyankpani</span>
+          <span className="text-blue-200">Bariwu Alhassan Nyankpani</span>
         </motion.h1>
 
         <motion.p

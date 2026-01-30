@@ -104,9 +104,9 @@ function Certificates() {
                 href={certificate.verify_url}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 text-xs text-slate-300 hover:text-blue-400 transition-colors"
+                className="inline-flex items-center gap-1 text-xs text-slate-300 hover:text-blue-400 transition-colors mt-3"
               >
-                Verify Credentials <ExternalLink size={14} />
+                Verify Credentials <ExternalLink size={15} />
               </a>
             )}
           </div>
