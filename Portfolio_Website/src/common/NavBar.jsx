@@ -44,10 +44,7 @@ function NavBar() {
         {/* Logo */}
 
         <a href="#home" className="flex items-center gap-2">
-          <img src="/portfolio_logo.png" className="w-5 h-5 rounded-full" />
-          <span className="font-bold tracking-tighter text-gray-400">
-            &#60; BAN &#47;&#62;
-          </span>
+          <img src="/portfolio_logo.png" className="w-10 h-10 rounded-full" />
         </a>
 
         {/* Desktop Menu */}

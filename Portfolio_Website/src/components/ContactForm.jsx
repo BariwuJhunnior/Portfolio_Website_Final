@@ -93,8 +93,9 @@ function ContactForm() {
           }
         />
 
+        {/* Honey Pot Input Field */}
         <div className="hidden" aria-hidden="true" style={{ display: "none" }}>
-          <label>Leave this field blank</label>
+          <label>If you are human leave this field blank</label>
           <input
             type="text"
             name="last_name"

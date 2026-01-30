@@ -16,7 +16,7 @@ function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="w-40 h-40 rounded-full border-4 border-none overflow-hidden shadow-2xl shadow-blue-500/20 hover:-translate-y-2 transition-transform duration-500"
+            className="w-40 h-40 rounded-full border-4 border-none overflow-hidden shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 transition-transform duration-500"
           >
             <img
               src="/profilePicturePortfolio.jpg"
