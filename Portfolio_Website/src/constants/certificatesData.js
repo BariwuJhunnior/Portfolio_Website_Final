@@ -32,7 +32,7 @@ const certificatesData = [
     verify_url: "https://savanna.alxafrica.com/certificates/rSNxGCYLMe",
   },
   {
-    id: 3,
+    id: 4,
     image: "/ALX_AICE_AI_Career_Essentials_2_0_Cert.png",
     title: "Artificial Intelligence For Career Essentials ",
     issuer: "ALX",

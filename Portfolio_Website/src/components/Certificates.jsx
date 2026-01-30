@@ -40,7 +40,7 @@ function Certificates() {
         damping: 20,
       }}
       viewport={{ once: false }}
-      className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl max-auto px-6"
+      className="grid grid-cols-1 md:grid-cols-4 lg:w-400 gap-6 max-w-5xl max-auto px-6 py-10"
     >
       {certificatesData.map((certificate) => (
         <motion.div
@@ -55,10 +55,10 @@ function Certificates() {
           }}
           viewport={{ once: false }}
           whileHover={{ y: -5 }}
-          className="bg-slate-800/40 border border-slate-700 p-4 rounded-2xl flex flex-col sm:flex-row gap-6 items-center justify-center"
+          className="bg-slate-800/40 border border-slate-700 p-4 rounded-2xl flex flex-col gap-6 items-center justify-center"
         >
           {/* Certificate Image Preview */}
-          <div className="sm:w-40 h-28 shrink-0 bg-slate-900 rounded-lg overflow-hidden border border-slate-700">
+          <div className="w-full h-32 md:h-40 lg:h-48 shrink-0 bg-slate-900 rounded-lg overflow-hidden border border-slate-700">
             <div className="w-full h-full bg-slate-800 overflow-hidden rounded-xl relative">
               <img
                 src={certificate.image}
