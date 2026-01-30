@@ -24,7 +24,7 @@ function Footer() {
             . All right reserved.
           </p>
           <p className="text-slate-400 text-xs flex items-center justify-center gap-1">
-            Built with React & Django
+            Built with React & Framer Motion.
           </p>
         </div>
       </div>
