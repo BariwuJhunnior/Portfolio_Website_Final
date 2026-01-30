@@ -85,6 +85,20 @@ function Certificates() {
               {certificate.description}
             </p>
 
+            {certificate.languages && (
+              <p className="font-bold text-white mb-2">
+                Languages:{" "}
+                <span className="text-blue-300">
+                  {certificate.languages.join(", ")}
+                </span>
+              </p>
+            )}
+
+            <p className="font-bold text-white mb-2">
+              Date Issued:{" "}
+              <span className="text-blue-300">{certificate.date_issued}</span>
+            </p>
+
             {certificate.verify_url && (
               <a
                 href={certificate.verify_url}

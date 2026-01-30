@@ -13,12 +13,12 @@ function ProjectCard({ project }) {
       whileTap={{ scale: 0.98 }}
       className="group bg-slate-800/50 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/50 transition-all duration-100 shadow-xl"
     >
-      <div className="relative h-60 w-full overflow-hidden">
-        <div className="aspect-video w-gull bg-slate-800 overflow-hidden rounded-xl">
+      <div className="relative h-60 w-full overflow-hidden ">
+        <div className="aspect-video w-full bg-slate-800 overflow-hidden  rounded-xl">
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover group-hover:scale-100 transition-transform duration-500 px-4 py-4 absolute inset-0"
+            className="w-full h-full object-contain group-hover:scale-100 transition-transform duration-500 px-4 py-4 absolute inset-0 "
             loading="lazy"
           />
         </div>
@@ -38,9 +38,7 @@ function ProjectCard({ project }) {
           </h3>
         </div>
 
-        <p className="text-slate-400 text-sm mb-4 line-clamp-2">
-          {project.description}
-        </p>
+        <p className="text-slate-400 text-sm mb-4">{project.description}</p>
 
         {/* Tech Stack Tag */}
         <div className="flex flex-wrap gap-2 mb-6">

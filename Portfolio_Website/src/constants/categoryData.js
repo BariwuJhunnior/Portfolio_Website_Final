@@ -5,11 +5,11 @@ const categoryData = [
   },
   {
     id: 2,
-    name: "Frontend",
+    name: "Front-End",
   },
   {
     id: 3,
-    name: "Backend",
+    name: "Back-End",
   },
 ];
 
