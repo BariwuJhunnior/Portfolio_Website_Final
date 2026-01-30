@@ -11,9 +11,9 @@ function ProjectCard({ project }) {
       transition={{ duration: 0.5 }}
       whileHover={{ y: -10 }}
       whileTap={{ scale: 0.98 }}
-      className="group bg-slate-800/50 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/50 transition-all duration-100 shadow-xl"
+      className="group bg-slate-800/50 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500/50 transition-all duration-50 shadow-xl"
     >
-      <div className="relative h-60 w-full overflow-hidden ">
+      <div className="relative mx-auto max-w-5xl overflow-hidden ">
         <div className="aspect-video w-full bg-slate-800 overflow-hidden  rounded-xl">
           <img
             src={project.image}
