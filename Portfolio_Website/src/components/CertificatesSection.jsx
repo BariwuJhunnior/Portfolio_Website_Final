@@ -4,7 +4,7 @@ import Certificates from "./Certificates";
 function CertificatesSection() {
   return (
     <>
-      <section id="contact" className="py-1">
+      <section id="certificates" className="py-1">
         <h2 className="text-3xl md:text-5xl font-bold text-center mb-8">
           Certifications
         </h2>

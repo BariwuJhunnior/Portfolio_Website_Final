@@ -31,7 +31,7 @@ function FooterSocials() {
             href={social.href}
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{ y: -3, color: "#3b82f6" }}
+            whileHover={{ y: -5, color: "#3b82f6" }}
             className="text-slate-400 transition-colors"
             aria-label={social.label}
             initial={{ opacity: 0, scale: 0.5, y: 20 }}
