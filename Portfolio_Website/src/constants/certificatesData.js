@@ -25,7 +25,7 @@ const certificatesData = [
     image: "/BackendCert.png",
     title: "Back-End Web Development ",
     issuer: "ALX",
-    languages: ["Python", "Django", "Restful-API"],
+    languages: ["Python", "Django", "REST API"],
     date_issued: "23rd January 2026",
     description:
       "For completing a 4 Month ALX Software Engineering Programme in Back-End Web Development",
@@ -38,7 +38,7 @@ const certificatesData = [
     issuer: "ALX",
     date_issued: "21st October 2025",
     description:
-      "For successfully completing a 6-Weeks programme in AI Career Essentials.",
+      "For completing a 6-week programme in AI Career Essentials.",
     verify_url: "https://savanna.alxafrica.com/certificates/cysXEJzGBR",
   },
 ];
