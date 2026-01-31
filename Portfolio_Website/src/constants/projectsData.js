@@ -27,6 +27,18 @@ const projectsData = [
       "https://www.loom.com/share/b66d063081ce41bd9fd511ebfbc6daed",
     category_name: "Back-End",
   },
+  {
+    id: 3,
+    title: "Portfolio Website",
+    image: "/Portfolio_Website_Screenshot.JPG",
+    is_deployed: true,
+    description:
+      "A modern, responsive portfolio website built with React and Vite, showcasing projects, certifications, and professional information with smooth animations and interactive elements.",
+    tech_stack: ["React", "Vite"],
+    github_url: "https://github.com/BariwuJhunnior/Portfolio_Website_Final",
+    deployed_url: "https://portfoliowebsitefinalv0.vercel.app/",
+    category_name: "Front-End",
+  },
 ];
 
 export default projectsData;
