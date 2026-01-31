@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Menu, Code2 } from "lucide-react";
+import { Menu, Code2, X } from "lucide-react";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,10 +63,10 @@ function NavBar() {
 
         {/* Mobile Toggle */}
         <button
-          className={`md:hidden text-white hover:cursor-pointer hover:text-gray-400 ${isOpen && "hidden"}`}
+          className={`md:hidden text-white hover:cursor-pointer hover:text-gray-400 ${isOpen ? "fixed top-4 right-4 z-50" : ""}`}
           onClick={() => setIsOpen(!isOpen)}
         >
-          {<Menu />}
+          {isOpen ? <X /> : <Menu />}
         </button>
 
         {/* Mobile Menu */}
@@ -74,14 +74,14 @@ function NavBar() {
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 20 }}
-            className="md:hidden bg-slate-800/40 border-b border-slate-700 pl-2"
+            className="md:hidden mt-5  border-slate-700 pl-2"
           >
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={(event) => handleClick(event, link.href)}
-                className="block py-2 x-2 text-slate-300 cursor-pointer hover:bg-slate-700/20"
+                className="block py-2 px-4 text-slate-300 rounded-2xl cursor-pointer hover:bg-slate-700/20"
               >
                 {link.name}
               </a>

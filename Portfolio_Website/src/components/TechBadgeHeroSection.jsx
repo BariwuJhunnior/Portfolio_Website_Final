@@ -25,6 +25,7 @@ function TechBadgeHeroSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ delay: 0.5 + index * 0.1 }}
+            className="mb-3"
           >
             <motion.span
               //Hover Animation
@@ -36,7 +37,7 @@ function TechBadgeHeroSection() {
               }}
               //Tap Animation
               whileTap={{ scale: 0.98 }}
-              className="cursor-default bg-slate-800 border border-slate-700 px-4 py-2 rounded-xl text-sm font-medium text-slate-200 shadow-sm"
+              className="cursor-default bg-slate-800 border border-slate-700 px-4 py-2  rounded-xl text-sm font-medium text-slate-200 shadow-sm"
             >
               {tech}
             </motion.span>
