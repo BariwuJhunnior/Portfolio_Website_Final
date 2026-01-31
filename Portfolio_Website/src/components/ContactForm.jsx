@@ -33,8 +33,8 @@ function ContactForm() {
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
-          from_name: formData.name,
-          from_email: formData.email,
+          name: formData.name,
+          email: formData.email,
           subject: formData.subject,
           message: formData.message,
           to_email: import.meta.env.VITE_RECIPIENT_EMAIL,
@@ -64,6 +64,7 @@ function ContactForm() {
           type="text"
           placeholder="Name"
           required
+          name="name"
           className="bg-slate-800 border border-slate-700 p-3 rounded-lg focus:outline-none focus:border-blue-500"
           value={formData.name}
           onChange={(event) =>
@@ -75,6 +76,7 @@ function ContactForm() {
           type="email"
           placeholder="Email"
           required
+          name="email"
           className="bg-slate-800 border border-slate-700 p-3 rounded-lg focus:outline-none focus:border-blue-500"
           value={formData.email}
           onChange={(event) =>
@@ -86,6 +88,7 @@ function ContactForm() {
           type="text"
           placeholder="Subject"
           required
+          name="subject"
           className="w-full bg-slate-800 border border-slate-700 p-3 rounded-lg focus:outline-none focus:border-blue-500"
           value={formData.subject}
           onChange={(event) =>
@@ -98,7 +101,7 @@ function ContactForm() {
           <label>If you are human leave this field blank</label>
           <input
             type="text"
-            name="last_name"
+            name="last_number"
             value={honeypot}
             onChange={(event) => setHoneypot(event.target.value)}
             tabIndex="-1"
@@ -110,6 +113,7 @@ function ContactForm() {
           placeholder="Message"
           rows="5"
           required
+          name="message"
           className="w-full bg-slate-800 border border-slate-700 p-3 rounded-lg focus:outline-none focus:border-blue-500"
           value={formData.message}
           onChange={(event) =>
