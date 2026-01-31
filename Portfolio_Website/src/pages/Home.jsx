@@ -6,7 +6,7 @@ import ContactSection from "../components/ContactSection";
 
 function Home() {
   return (
-    <div className="bg-[url('/PortfolioBackgroundImage.jpg')] bg-cover bg-center w-screen h-full text-white min-h-screen">
+    <div className="bg-slate-900 w-screen h-full text-white min-h-screen">
       {/* 1. Hero Section */}
       <section id="home">
         <HeroSection />
