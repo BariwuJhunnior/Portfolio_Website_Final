@@ -40,7 +40,7 @@ function NavBar() {
       animate={{ y: 0 }}
       className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-slate-900/80 backdrop-blur-md py-4 shadow-lg" : "bg-tranparent py-2 px-1"}`}
     >
-      <div className="max-w-7xl px-1 flex  justify-between items-center">
+      <div className="w-full px-4 flex  justify-between items-center">
         {/* Logo */}
 
         <a href="#home" className="flex items-center gap-2">
@@ -48,7 +48,7 @@ function NavBar() {
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-8">
+        <div className="hidden md:flex gap-8 right-0">
           {navLinks.map((link) => (
             <a
               key={link.name}
