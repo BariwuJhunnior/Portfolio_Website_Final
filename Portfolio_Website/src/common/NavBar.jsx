@@ -81,7 +81,7 @@ function NavBar() {
                 key={link.name}
                 href={link.href}
                 onClick={(event) => handleClick(event, link.href)}
-                className="block py-2 px-4 text-slate-300 rounded-2xl cursor-pointer hover:bg-slate-700/20"
+                className="block py-2 px-4 text-slate-300 rounded-2xl hover:text-white cursor-pointer hover:bg-slate-700/20"
               >
                 {link.name}
               </a>
