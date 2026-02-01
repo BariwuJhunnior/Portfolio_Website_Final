@@ -75,14 +75,14 @@ function NavBar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 20 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden mt-5  border-slate-700 pl-2"
+            className="md:hidden mt-5  border-slate-700"
           >
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={(event) => handleClick(event, link.href)}
-                className="block py-2 px-4 text-slate-300 rounded-2xl hover:text-white cursor-pointer hover:bg-slate-700/20"
+                className="block py-0 px-0 text-slate-300 rounded-2xl hover:text-white cursor-pointer hover:bg-slate-700/20 "
               >
                 {link.name}
               </a>
