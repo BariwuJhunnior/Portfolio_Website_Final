@@ -1,1 +1,35 @@
 @import "tailwindcss";
+
+@theme {
+  --color-app-bg: var(--bg-color);
+  --color-app-text: var(--text-color);
+  --color-app-card: var(--card-bg);
+  --color-app-accent: var(--accent-color);
+  --color-app-border: var(--border-color);
+}
+
+@layer base {
+  :root {
+    /* Light Mode: Soft & Professional */
+    --bg-color: #f8fafc; /* Slate 50 */
+    --text-color: #0f172a; /* Slate 900 */
+    --card-bg: #ffffff; /* Pure White */
+    --accent-color: #659bf3; /* Blue 500 */
+    --border-color: #e2e8f0; /* Slate 200 */
+  }
+
+  .dark {
+    /* Dark Mode: Deep Midnight & Neon Accents */
+    --bg-color: #020617; /* Slate 950 */
+    --text-color: #f1f5f9; /* Slate 100 */
+    --card-bg: #0f172a; /* Slate 900 */
+    --accent-color: #60a5fa; /* Blue 400 */
+    --border-color: #1e293b; /* Slate 800 */
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    @apply transition-colors duration-500 ease-in-out;
+  }
+}

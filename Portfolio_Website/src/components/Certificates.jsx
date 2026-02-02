@@ -81,14 +81,14 @@ function Certificates() {
             <h3 className="text-lg font-bold text-white mb-2">
               {certificate.title}
             </h3>
-            <p className="text-slate-400 text-sm mb-4 line-clamp-2">
+            <p className="text-app-text font-bold text-sm mb-4 line-clamp-2">
               {certificate.description}
             </p>
 
             {certificate.languages && (
               <p className="font-bold text-white mb-2">
                 Languages:{" "}
-                <span className="text-blue-300">
+                <span className="text-app-text">
                   {certificate.languages.join(", ")}
                 </span>
               </p>
@@ -104,7 +104,7 @@ function Certificates() {
                 href={certificate.verify_url}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-1 text-xs text-slate-300 hover:text-blue-400 transition-colors mt-3"
+                className="inline-flex items-center gap-1 text-xs text-app-bg hover:text-blue-400 transition-colors mt-3"
               >
                 Verify Credentials <ExternalLink size={15} />
               </a>

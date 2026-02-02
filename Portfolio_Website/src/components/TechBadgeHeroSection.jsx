@@ -32,8 +32,6 @@ function TechBadgeHeroSection() {
               whileHover={{
                 scale: 1.9,
                 y: -5,
-                backgroundColor: "rgba(59, 130, 246, 0.1)",
-                borderColor: "rgba(59, 130, 246, 0.5)",
               }}
               //Tap Animation
               whileTap={{ scale: 0.98 }}

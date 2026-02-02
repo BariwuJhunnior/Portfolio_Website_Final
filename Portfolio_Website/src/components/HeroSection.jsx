@@ -34,14 +34,14 @@ function HeroSection() {
           className="text-3xl md:text-5xl font-extrabold mb-4"
         >
           Hi, I'm{" "}
-          <span className="text-blue-200">Bariwu Alhassan Nyankpani</span>
+          <span className="text-app-accent">Bariwu Alhassan Nyankpani</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-[18px] md:text-xl lg:text-xl text-slate-300 max-w-2xl mb-8 "
+          className="text-[18px] md:text-xl lg:text-xl text-app-text max-w-2xl mb-8 "
         >
           As a passionate Full-Stack Developer, I thrive on building dynamic web
           applications using technologies like React, Python, MySQL, Django,

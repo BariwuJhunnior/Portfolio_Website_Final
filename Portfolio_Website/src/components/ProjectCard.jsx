@@ -38,7 +38,7 @@ function ProjectCard({ project }) {
           </h3>
         </div>
 
-        <p className="text-slate-400 text-sm mb-4">{project.description}</p>
+        <p className="text-app-text text-xl mb-4">{project.description}</p>
 
         {/* Tech Stack Tag */}
         <div className="flex flex-wrap gap-2 mb-6">

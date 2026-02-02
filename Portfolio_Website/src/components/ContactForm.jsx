@@ -65,7 +65,7 @@ function ContactForm() {
           placeholder="Name"
           required
           name="name"
-          className="bg-slate-800 border border-slate-700 p-3 rounded-lg focus:outline-none focus:border-blue-500"
+          className="bg-app-bg border border-slate-700 p-3 rounded-lg focus:outline-none focus:border-blue-500 "
           value={formData.name}
           onChange={(event) =>
             setFormData({ ...formData, name: event.target.value })
@@ -77,7 +77,7 @@ function ContactForm() {
           placeholder="Email"
           required
           name="email"
-          className="bg-slate-800 border border-slate-700 p-3 rounded-lg focus:outline-none focus:border-blue-500"
+          className="bg-app-bg border border-slate-700 p-3 rounded-lg focus:outline-none focus:border-blue-500 "
           value={formData.email}
           onChange={(event) =>
             setFormData({ ...formData, email: event.target.value })
@@ -89,7 +89,7 @@ function ContactForm() {
           placeholder="Subject"
           required
           name="subject"
-          className="w-full bg-slate-800 border border-slate-700 p-3 rounded-lg focus:outline-none focus:border-blue-500"
+          className="w-full bg-app-bg border border-slate-700 p-3 rounded-lg focus:outline-none focus:border-blue-500 "
           value={formData.subject}
           onChange={(event) =>
             setFormData({ ...formData, subject: event.target.value })
@@ -114,7 +114,7 @@ function ContactForm() {
           rows="5"
           required
           name="message"
-          className="w-full bg-slate-800 border border-slate-700 p-3 rounded-lg focus:outline-none focus:border-blue-500"
+          className="w-full bg-app-bg border border-slate-700 p-3 rounded-lg focus:outline-none focus:border-blue-500 "
           value={formData.message}
           onChange={(event) =>
             setFormData({ ...formData, message: event.target.value })

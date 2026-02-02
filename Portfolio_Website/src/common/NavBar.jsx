@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, Code2, X } from "lucide-react";
+import ThemeToggle from "../components/ThemeToggle";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,48 +48,52 @@ function NavBar() {
           <img src="/portfolio_logo.png" className="w-10 h-10 rounded-full" />
         </a>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex gap-8 right-0">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              onClick={(event) => handleClick(event, link.href)}
-              className="text-slate-300 hover:text-blue-400 transition-colors font-medium"
-            >
-              {link.name}
-            </a>
-          ))}
-        </div>
+        <div className="flex gap-2">
+          <ThemeToggle />
 
-        {/* Mobile Toggle */}
-        <button
-          className={`md:hidden text-white hover:cursor-pointer hover:text-gray-400 ${isOpen ? "fixed top-4 right-4 z-50" : ""}`}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X /> : <Menu />}
-        </button>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 20 }}
-            transition={{ duration: 0.3 }}
-            className="md:hidden mt-5 flex flex-col border-slate-700"
-          >
+          {/* Desktop Menu */}
+          <div className="hidden md:flex gap-8 right-0">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={(event) => handleClick(event, link.href)}
-                className="`block py-1 px-0 text-slate-300 rounded-2xl hover:text-white cursor-pointer hover:bg-slate-700/20 "
+                className="text-slate-300 hover:text-blue-400 transition-colors font-medium"
               >
                 {link.name}
               </a>
             ))}
-          </motion.div>
-        )}
+          </div>
+
+          {/* Mobile Toggle */}
+          <button
+            className={`md:hidden text-app-text hover:cursor-pointer hover:text-gray-400 flex items-center ${isOpen ? "fixed top-4 right-4 z-50" : ""}`}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X /> : <Menu />}
+          </button>
+
+          {/* Mobile Menu */}
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 20 }}
+              transition={{ duration: 0.3 }}
+              className="md:hidden mt-8 flex flex-col border-slate-700"
+            >
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={(event) => handleClick(event, link.href)}
+                  className="`block py-1 px-1 text-app-text rounded-2xl hover:text-white cursor-pointer hover:bg-app-text "
+                >
+                  {link.name}
+                </a>
+              ))}
+            </motion.div>
+          )}
+        </div>
       </div>
     </motion.nav>
   );
