@@ -75,7 +75,7 @@ function NavBar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 20 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden mt-5  border-slate-700"
+            className="md:hidden mt-5 flex flex-col border-slate-700"
           >
             {navLinks.map((link) => (
               <a
