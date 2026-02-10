@@ -48,9 +48,11 @@ function NavBar() {
           <img src="/portfolio_logo.png" className="w-10 h-10 rounded-full" />
         </a>
 
-        <div className="flex gap-2">
+        <div>
           <ThemeToggle />
+        </div>
 
+        <div className="flex">
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8 right-0">
             {navLinks.map((link) => (
@@ -67,7 +69,7 @@ function NavBar() {
 
           {/* Mobile Toggle */}
           <button
-            className={`md:hidden text-app-text hover:cursor-pointer hover:text-gray-400 flex items-center ${isOpen ? "fixed top-4 right-4 z-50" : ""}`}
+            className={`md:hidden text-app-text hover:cursor-pointer hover:text-gray-400 flex items-center ${isOpen ? "fixed top-4 right-2 z-50 " : ""} ${scrolled ? "text-white " : ""}`}
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X /> : <Menu />}
@@ -76,17 +78,17 @@ function NavBar() {
           {/* Mobile Menu */}
           {isOpen && (
             <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 20 }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden mt-8 flex flex-col border-slate-700"
+              className="md:hidden mt-0 flex flex-col border-slate-700 absolute top-full right-0 z-50 bg-slate-900 border-t p-1 gap-1 rounded-2xl"
             >
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={(event) => handleClick(event, link.href)}
-                  className="`block py-1 px-1 text-app-text rounded-2xl hover:text-white cursor-pointer hover:bg-app-text "
+                  className="text-slate-100 hover:text-white py-2 text-lg border-b border-slate-800/50"
                 >
                   {link.name}
                 </a>
